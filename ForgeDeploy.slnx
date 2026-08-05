@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ForgeDeploy.Core/ForgeDeploy.Core.csproj" />
+    <Project Path="src/ForgeDeploy.Infrastructure/ForgeDeploy.Infrastructure.csproj" />
+    <Project Path="src/ForgeDeploy.Worker/ForgeDeploy.Worker.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ForgeDeploy.UnitTests/ForgeDeploy.UnitTests.csproj" />
+  </Folder>
+</Solution>
