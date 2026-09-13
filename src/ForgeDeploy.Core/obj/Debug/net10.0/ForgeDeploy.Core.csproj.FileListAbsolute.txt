@@ -9,3 +9,4 @@
 /home/anl/ForgeDeploy/src/ForgeDeploy.Core/obj/Debug/net10.0/refint/ForgeDeploy.Core.dll
 /home/anl/ForgeDeploy/src/ForgeDeploy.Core/obj/Debug/net10.0/ForgeDeploy.Core.pdb
 /home/anl/ForgeDeploy/src/ForgeDeploy.Core/obj/Debug/net10.0/ref/ForgeDeploy.Core.dll
+/home/anl/ForgeDeploy/src/ForgeDeploy.Core/obj/Debug/net10.0/ForgeDeploy.Core.sourcelink.json

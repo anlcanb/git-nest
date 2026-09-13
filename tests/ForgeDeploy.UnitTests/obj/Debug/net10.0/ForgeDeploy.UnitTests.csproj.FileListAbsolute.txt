@@ -93,3 +93,8 @@
 /home/anl/ForgeDeploy/tests/ForgeDeploy.UnitTests/obj/Debug/net10.0/ForgeDeploy.UnitTests.pdb
 /home/anl/ForgeDeploy/tests/ForgeDeploy.UnitTests/obj/Debug/net10.0/ForgeDeploy.UnitTests.genruntimeconfig.cache
 /home/anl/ForgeDeploy/tests/ForgeDeploy.UnitTests/obj/Debug/net10.0/ref/ForgeDeploy.UnitTests.dll
+/home/anl/ForgeDeploy/tests/ForgeDeploy.UnitTests/bin/Debug/net10.0/.msCoverageSourceRootsMapping_ForgeDeploy.UnitTests
+/home/anl/ForgeDeploy/tests/ForgeDeploy.UnitTests/bin/Debug/net10.0/CoverletSourceRootsMapping_ForgeDeploy.UnitTests
+/home/anl/ForgeDeploy/tests/ForgeDeploy.UnitTests/bin/Debug/net10.0/ForgeDeploy.Core.dll
+/home/anl/ForgeDeploy/tests/ForgeDeploy.UnitTests/bin/Debug/net10.0/ForgeDeploy.Core.pdb
+/home/anl/ForgeDeploy/tests/ForgeDeploy.UnitTests/obj/Debug/net10.0/ForgeDeploy.UnitTests.sourcelink.json

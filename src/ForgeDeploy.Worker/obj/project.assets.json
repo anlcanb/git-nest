@@ -1,11 +1,49 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "ForgeDeploy.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/ForgeDeploy.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ForgeDeploy.Core.dll": {}
+        }
+      },
+      "ForgeDeploy.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "ForgeDeploy.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ForgeDeploy.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ForgeDeploy.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ForgeDeploy.Core/1.0.0": {
+      "type": "project",
+      "path": "../ForgeDeploy.Core/ForgeDeploy.Core.csproj",
+      "msbuildProject": "../ForgeDeploy.Core/ForgeDeploy.Core.csproj"
+    },
+    "ForgeDeploy.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../ForgeDeploy.Infrastructure/ForgeDeploy.Infrastructure.csproj",
+      "msbuildProject": "../ForgeDeploy.Infrastructure/ForgeDeploy.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "ForgeDeploy.Core >= 1.0.0",
+      "ForgeDeploy.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/anl/.nuget/packages/": {}
@@ -26,13 +64,20 @@
         "net10.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/anl/ForgeDeploy/src/ForgeDeploy.Core/ForgeDeploy.Core.csproj": {
+              "projectPath": "/home/anl/ForgeDeploy/src/ForgeDeploy.Core/ForgeDeploy.Core.csproj"
+            },
+            "/home/anl/ForgeDeploy/src/ForgeDeploy.Infrastructure/ForgeDeploy.Infrastructure.csproj": {
+              "projectPath": "/home/anl/ForgeDeploy/src/ForgeDeploy.Infrastructure/ForgeDeploy.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -45,10 +90,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "imports": [
           "net461",
@@ -66,7 +112,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

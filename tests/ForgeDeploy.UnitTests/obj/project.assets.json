@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
       "coverlet.collector/6.0.4": {
@@ -392,6 +392,16 @@
         },
         "build": {
           "build/net8.0/xunit.runner.visualstudio.props": {}
+        }
+      },
+      "ForgeDeploy.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/ForgeDeploy.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ForgeDeploy.Core.dll": {}
         }
       }
     }
@@ -903,10 +913,16 @@
         "xunit.runner.visualstudio.3.1.4.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "ForgeDeploy.Core/1.0.0": {
+      "type": "project",
+      "path": "../../src/ForgeDeploy.Core/ForgeDeploy.Core.csproj",
+      "msbuildProject": "../../src/ForgeDeploy.Core/ForgeDeploy.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "ForgeDeploy.Core >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.14.1",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
@@ -932,13 +948,17 @@
         "net10.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/anl/ForgeDeploy/src/ForgeDeploy.Core/ForgeDeploy.Core.csproj": {
+              "projectPath": "/home/anl/ForgeDeploy/src/ForgeDeploy.Core/ForgeDeploy.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -951,10 +971,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
@@ -990,7 +1011,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/10.0.110/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
